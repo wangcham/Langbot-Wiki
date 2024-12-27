@@ -28,7 +28,7 @@ services:
 
 networks:
   langbot-network:
-    driver: bridge
+    external: true
 ```
 
 然后在消息平台的 `docker-compose.yaml` 文件中添加同样的网络配置（如果是直接 docker run 命令启动的，请在启动命令中添加 `--network langbot-network`）。接着在消息平台配置文件中，把 WS 反向连接地址中的 IP 地址修改为 `langbot`（例如：`ws://langbot:2280/ws`）。
