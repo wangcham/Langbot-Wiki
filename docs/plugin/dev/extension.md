@@ -78,7 +78,7 @@
 
 ### 消息平台适配器
 
-新增一个消息平台适配器，例如：接入Telegram等。
+新增一个消息平台适配器，例如：接入 WhatsApp、Discord 等。
 
 - 基类：`pkg.platform.adapter.MessageSourceAdapter`
 - 装饰器：`pkg.platform.adapter.adapter_class(name: str)`

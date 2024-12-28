@@ -195,6 +195,10 @@ export default defineConfig({
             text: "如何接入 OneAPI、LinkAI 等第三方 OpenAI 格式接口？",
             link: "/workshop/one-api",
           },
+          {
+            text: "如何实现一个消息平台适配器？",
+            link: "/workshop/impl-platform-adapter",
+          },
         ],
       },
       {
