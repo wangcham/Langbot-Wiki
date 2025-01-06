@@ -44,6 +44,12 @@
     ],
     "gitee-ai": [
         "XXXXX"
+    ],
+    "xai": [
+        "xai-1234567890"
+    ],
+    "zhipuai": [
+        "xxxxxxx"
     ]
 },
 ```
@@ -93,6 +99,16 @@
             "base-url": "https://ai.gitee.com/v1",
             "args": {},
             "timeout": 120
+        },
+        "xai-chat-completions": {
+            "base-url": "https://api.x.ai/v1",
+            "args": {},
+            "timeout": 120
+        },
+        "zhipuai-chat-completions": {
+            "base-url": "https://open.bigmodel.cn/api/paas/v4",
+            "args": {},
+            "timeout": 120
         }
     },
 ```
@@ -107,6 +123,9 @@
 - `deepseek-chat-completions`：[Deepseek](https://deepseek.com/) 请求器（深度求索）
 - `ollama-chat`：[Ollama](https://ollama.com/) 请求器，不需要密钥，直接请求目标地址的 Ollama 服务
 - `gitee-ai-chat-completions`：[Gitee AI](https://ai.gitee.com/) Serverless API 请求器（OpenAI 兼容接口）
+- `xai-chat-completions`：[xAI](https://x.ai/) 请求器
+- `zhipuai-chat-completions`：[智谱 AI](https://open.bigmodel.cn/) 请求器
+
 
 `base-url`：设置接口地址。
 
