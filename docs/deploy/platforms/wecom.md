@@ -18,6 +18,28 @@ Token和EncodingAESKey点击随机获取，并记录下来，之后填写配置�
 ## 保存回调地址
 点击保存，如果以上的URL填写正确，那么可以保存成功，这意味着企业微信和langbot可以进行通信，如果出现**openapi请求回调地址不通过**，请再三检查你的URL填写是否正确。
 
+## 企业微信配置项
+
+打开企业微信管理后台主页，点击`我的企业`，记录下最下面的企业ID。
+
+![企业ID](/assets/image/wecom2.png)
+
+点击`安全与管理`,`管理工具`,`通讯录同步`
+
+![通讯录同步secret](/assets/image/wecom3.png)
+
+点击`查看secret`，记录下来。
+
+点击`应用管理`,找到刚才创建的机器人，查看机器人的secret,记录下来。
+
+![机器人secret](/assets/image/wecom4.png)
+
+至此，已经获得了五个配置项，分别是Token，EncodingAESKey，corpid（企业ID），secret，contacts_secret（通讯录同步secret）。
+
+
+
+
+
 
 
 
