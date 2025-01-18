@@ -99,6 +99,33 @@
 
 `token`：验证密钥，，与`go-cqhttp`的`config.yml`里面的保持一致
 
+### 企业微信适配器
+
+用于接入企业微信,如果不清楚这些内容应该填写什么，请查看[企业微信配置项](/deploy/platforms/wecom.md#企业微信配置项)。
+
+```json
+{
+            "adapter":"wecom",
+            "enable":false,
+            "host":"0.0.0.0",
+            "port":5001,
+            "corpid":"",
+            "secret":"",
+            "token":"",
+            "EncodingAESKey":"",
+            "contacts_secret":""
+},
+```
+`"adapter": "wecom"`，无需改动。
+
+`enable`：是否启用，配置完成后请将其设为`true`
+
+`host`：运行 企业微信回调地址 的主机地址，一般不改动
+
+`port`：运行 企业微信回调地址 的监听端口，一般不改动
+
+`corpid`,`secret`,`token`,`EncodingAESKey`,`contacts_secret`都在企业微信配置项页中获取。
+
 ## provider.json
 
 修改此配置文件以设置所连接的 AI 提供商的相关信息，目前支持 `openai(GPT)`, `anthropic(claude)`, `moonshot(月之暗面)` 三种接口及对应模型。
