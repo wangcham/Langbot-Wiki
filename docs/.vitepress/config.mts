@@ -32,7 +32,7 @@ export default defineConfig({
             text: "部署 LangBot",
             collapsed: true,
             items: [
-              // { text: "一键部署", 
+              // { text: "一键部署",
               //   items: [
               //     { text: "宝塔面板(推荐)", link: "/deploy/langbot/one-click/bt" },
               //   ],
@@ -45,43 +45,50 @@ export default defineConfig({
           {
             text: "部署消息平台",
             collapsed: true,
-            // link: "/deploy/platforms/",
+            // link: "/deploy/platforms/qq/",
             items: [
               {
-                text: "aiocqhttp(推荐)",
+                text: "QQ",
                 collapsed: true,
-                // link: "/deploy/platforms/aiocqhttp/",
                 items: [
                   {
-                    text: "NapCat",
-                    link: "/deploy/platforms/aiocqhttp/napcat",
+                    text: "aiocqhttp(推荐)",
+                    collapsed: true,
+                    // link: "/deploy/platforms/qq/aiocqhttp/",
+                    items: [
+                      {
+                        text: "NapCat",
+                        link: "/deploy/platforms/qq/aiocqhttp/napcat",
+                      },
+                      {
+                        text: "Lagrange",
+                        link: "/deploy/platforms/qq/aiocqhttp/lagrange",
+                      },
+                      {
+                        text: "llonebot",
+                        link: "/deploy/platforms/qq/aiocqhttp/llonebot",
+                      },
+                      {
+                        text: "shamrock",
+                        link: "/deploy/platforms/qq/aiocqhttp/shamrock",
+                      },
+                    ],
+                  },
+                  // {
+                  //   text: "mirai",
+                  //   link: "/deploy/platforms/qq/mirai",
+                  // },
+                  {
+                    text: "go-cqhttp",
+                    link: "/deploy/platforms/qq/gocq",
                   },
                   {
-                    text: "Lagrange",
-                    link: "/deploy/platforms/aiocqhttp/lagrange",
-                  },
-                  {
-                    text: "llonebot",
-                    link: "/deploy/platforms/aiocqhttp/llonebot",
-                  },
-                  {
-                    text: "shamrock",
-                    link: "/deploy/platforms/aiocqhttp/shamrock",
+                    text: "QQ官方",
+                    link: "/deploy/platforms/qq/official",
                   },
                 ],
               },
-              // {
-              //   text: "mirai",
-              //   link: "/deploy/platforms/mirai",
-              // },
-              {
-                text: "go-cqhttp",
-                link: "/deploy/platforms/gocq",
-              },
-              {
-                text: "QQ官方",
-                link: "/deploy/platforms/official",
-              },
+              { text: "企业微信", link: "/deploy/platforms/wecom/wecom" },
             ],
           },
           { text: "填写配置信息", link: "/deploy/quick-config/config" },
@@ -203,9 +210,7 @@ export default defineConfig({
       },
       {
         text: "开发",
-        items: [
-          { text: "组件架构", link: "/develop/comp-arch" },
-        ],
+        items: [{ text: "组件架构", link: "/develop/comp-arch" }],
       },
     ],
 
