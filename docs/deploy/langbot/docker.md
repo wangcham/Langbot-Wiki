@@ -28,7 +28,7 @@ docker compose up
 首次启动会输出创建配置文件的提示，请继续按照文件配置。
 
 容器会映射`5300`端口供 WebUI 使用，您可以访问`http://127.0.0.1:5300`查看 WebUI。  
-还会映射`2280-2290`端口供使用 OneBot 协议的消息平台适配器反向连接，请继续阅读[消息平台接入文档](/deploy/platforms/aiocqhttp/napcat)。
+还会映射`2280-2290`端口供使用 OneBot 协议的消息平台适配器反向连接，请继续阅读[消息平台接入文档](/deploy/platforms/readme)。
 
 ## 注意
 

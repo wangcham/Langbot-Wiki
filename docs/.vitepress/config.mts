@@ -43,7 +43,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "部署消息平台",
+            text: "连接消息平台",
             collapsed: true,
             // link: "/deploy/platforms/qq/",
             items: [
@@ -88,13 +88,6 @@ export default defineConfig({
           {
             text: "网络配置详解",
             link: "/deploy/network-details",
-            // collapsed: true,
-            // items: [
-            //   { text: "LangBot和消息平台均Docker", link: "/deploy/network/langbot-platform-docker" },
-            //   { text: "仅LangBot Docker", link: "/deploy/network/langbot-docker" },
-            //   { text: "仅消息平台 Docker（不建议）", link: "/deploy/network/platform-docker" },
-            //   { text: "LangBot和消息平台均非Docker", link: "/deploy/network/langbot-platform-manual" },
-            // ],
           },
           {
             text: "更新 LangBot",
@@ -153,7 +146,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "基础教程", link: "/plugin/dev/tutor" },
-              { text: "消息平台实体", link: "/plugin/dev/messages" },
+              { text: "消息实体", link: "/plugin/dev/messages" },
               { text: "API 参考", link: "/plugin/dev/api-ref" },
               { text: "组件扩展", link: "/plugin/dev/extension" },
             ],
@@ -169,17 +162,6 @@ export default defineConfig({
           { text: "设置项管理", link: "/webui/settings" },
         ],
       },
-      // {
-      //   text: "规模化和商用",
-      //   // collapsed: true,
-      //   // link: "/tob/",
-      //   items: [
-      //     { text: "消息平台误导性", link: "/tob/platform" },
-      //     { text: "AI内容合规性", link: "/tob/provider" },
-      //     { text: "咨询方式", link: "/tob/contact" },
-      //   ],
-      // },
-
       {
         text: "实践",
         items: [
