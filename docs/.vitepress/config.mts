@@ -37,8 +37,8 @@ export default defineConfig({
               //     { text: "宝塔面板(推荐)", link: "/deploy/langbot/one-click/bt" },
               //   ],
               // },
-              { text: "宝塔面板部署", link: "/deploy/langbot/one-click/bt" },
               { text: "Docker部署", link: "/deploy/langbot/docker" },
+              { text: "宝塔面板部署", link: "/deploy/langbot/one-click/bt" },
               { text: "手动部署", link: "/deploy/langbot/manual" },
             ],
           },
@@ -48,45 +48,38 @@ export default defineConfig({
             // link: "/deploy/platforms/qq/",
             items: [
               {
-                text: "QQ",
+                text: "消息平台说明",
+                link: "/deploy/platforms/readme",
+              },
+              {
+                text: "QQ 个人号（逆向协议）",
                 collapsed: true,
                 items: [
                   {
-                    text: "aiocqhttp(推荐)",
-                    collapsed: true,
-                    // link: "/deploy/platforms/qq/aiocqhttp/",
-                    items: [
-                      {
-                        text: "NapCat",
-                        link: "/deploy/platforms/qq/aiocqhttp/napcat",
-                      },
-                      {
-                        text: "Lagrange",
-                        link: "/deploy/platforms/qq/aiocqhttp/lagrange",
-                      },
-                      {
-                        text: "llonebot",
-                        link: "/deploy/platforms/qq/aiocqhttp/llonebot",
-                      },
-                      {
-                        text: "shamrock",
-                        link: "/deploy/platforms/qq/aiocqhttp/shamrock",
-                      },
-                    ],
+                    text: "NapCat",
+                    link: "/deploy/platforms/qq/aiocqhttp/napcat",
                   },
-                  // {
-                  //   text: "mirai",
-                  //   link: "/deploy/platforms/qq/mirai",
-                  // },
+                  {
+                    text: "Lagrange",
+                    link: "/deploy/platforms/qq/aiocqhttp/lagrange",
+                  },
+                  {
+                    text: "llonebot",
+                    link: "/deploy/platforms/qq/aiocqhttp/llonebot",
+                  },
+                  {
+                    text: "shamrock",
+                    link: "/deploy/platforms/qq/aiocqhttp/shamrock",
+                  },
                   {
                     text: "go-cqhttp",
                     link: "/deploy/platforms/qq/gocq",
                   },
-                  {
-                    text: "QQ官方",
-                    link: "/deploy/platforms/qq/official",
-                  },
                 ],
+              },
+              {
+                text: "QQ 官方机器人",
+                link: "/deploy/platforms/qq/official",
               },
               { text: "企业微信", link: "/deploy/platforms/wecom/wecom" },
             ],
