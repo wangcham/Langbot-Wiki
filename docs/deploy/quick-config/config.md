@@ -105,15 +105,15 @@
 
 ```json
 {
-            "adapter":"wecom",
-            "enable":false,
-            "host":"0.0.0.0",
-            "port":5001,
-            "corpid":"",
-            "secret":"",
-            "token":"",
-            "EncodingAESKey":"",
-            "contacts_secret":""
+            "adapter": "wecom",
+            "enable": false,
+            "host": "0.0.0.0",
+            "port": 2290,
+            "corpid": "",
+            "secret": "",
+            "token": "",
+            "EncodingAESKey": "",
+            "contacts_secret": ""
 },
 ```
 `"adapter": "wecom"`，无需改动。

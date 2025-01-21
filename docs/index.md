@@ -8,7 +8,7 @@ hero:
     src: /langbot-logo-block.png
     alt: LangBot-logo
   text: ""
-  tagline: "原名 QChatGPT；😎高稳定、🧩支持插件、🦄多模态的 LLM QQ / QQ频道 / OneBot 机器人 / Agent 平台"
+  tagline: "😎高稳定、🧩支持插件、🦄多模态 - 大模型原生即时通信机器人平台"
   actions:
     - theme: brand
       text: 查看文档

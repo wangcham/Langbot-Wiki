@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "LangBot 文档",
   description:
-    "原名 QChatGPT；😎高稳定、🧩支持插件、🦄多模态的 LLM QQ / QQ频道 / OneBot 机器人 / Agent 平台",
+    "😎高稳定、🧩支持插件、🦄多模态 - 大模型原生即时通信机器人平台",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/langbot-logo-0.5x.png",
@@ -32,11 +32,6 @@ export default defineConfig({
             text: "部署 LangBot",
             collapsed: true,
             items: [
-              // { text: "一键部署",
-              //   items: [
-              //     { text: "宝塔面板(推荐)", link: "/deploy/langbot/one-click/bt" },
-              //   ],
-              // },
               { text: "Docker部署", link: "/deploy/langbot/docker" },
               { text: "宝塔面板部署", link: "/deploy/langbot/one-click/bt" },
               { text: "手动部署", link: "/deploy/langbot/manual" },
@@ -45,7 +40,6 @@ export default defineConfig({
           {
             text: "连接消息平台",
             collapsed: true,
-            // link: "/deploy/platforms/qq/",
             items: [
               {
                 text: "消息平台说明",
