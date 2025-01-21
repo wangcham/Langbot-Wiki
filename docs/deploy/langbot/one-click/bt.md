@@ -48,4 +48,4 @@
 
 如果你更偏好于直接修改json配置文件，你可以看上图的查看本地映射目录，进入安装目录，`data`文件夹用于存储配置文件，`plugins`文件夹用于存储插件相关。
 
-接下来请继续阅读[部署消息平台](/deploy/platforms/aiocqhttp/napcat.html)页。
+接下来请继续阅读[部署消息平台](/deploy/platforms/readme)页。

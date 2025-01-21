@@ -1,5 +1,7 @@
 # 部署消息平台 NapCat
 
+通过 OneBot 11 协议接入，需选择使用`aiocqhttp`作为适配器。
+
 ## NapCat安装教程
 
 按照 [NapCat 官方文档安装](https://napcat.napneko.icu/guide/start-install)
