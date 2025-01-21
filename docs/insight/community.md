@@ -8,14 +8,6 @@
 
 ## 本项目交流 QQ 群
 
-### 社区群
-
 > 遇到问题请先认真阅读文档，如无法解决再加群提问
 
-Lazy的交流群：619154800 ([链接](https://qm.qq.com/q/1K9GjQuza))
-
-### 官方群
-
-> 官方群不解答部署问题
-
-四群：195992197 ([链接](https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=cSekvWmyezfCE4O8gXS7lSjkmPinjzpP&authKey=G4jHfz2%2BtQawxCRhn1ZRrQiI8bTvlepQubZL6F9fymFuz8jqZZ4FkYh6lhKLMCd9&noverify=0&group_code=195992197))
+LangBot 社区交流群：619154800 ([链接](https://qm.qq.com/q/1K9GjQuza))
