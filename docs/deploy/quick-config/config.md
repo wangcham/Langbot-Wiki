@@ -101,7 +101,7 @@
 
 ### 企业微信适配器
 
-用于接入企业微信,如果不清楚这些内容应该填写什么，请查看[企业微信配置项](/deploy/platforms/wecom/wecom.md#企业微信配置项)。
+用于接入企业微信,如果不清楚这些内容应该填写什么，请查看[配置企业微信](/deploy/platforms/wecom/wecom.md)。
 
 ```json
 {
