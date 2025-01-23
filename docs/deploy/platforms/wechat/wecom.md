@@ -30,7 +30,7 @@
 ![机器人secret](/assets/image/wecom4.png)
 
 至此，已经获得了三个配置项，分别是 corpid（企业ID），secret（机器人 secret），contacts_secret（通讯录同步 secret）。
-将他们填写入[企业微信适配器](/deploy/platforms/quick-config/config.md#企业微信适配器)
+将他们填写入[企业微信适配器](/deploy/quick-config/config.md#企业微信适配器)
 
 ### 配置回调地址
 
@@ -40,7 +40,7 @@
 
 URL填写为` http://your_ip_address:2290/callback/command `，你的IP地址就是部署LangBot的服务器的地址。
 
-Token 和 EncodingAESKey 点击随机获取，并记录下来，填写到[企业微信适配器](/deploy/platforms/quick-config/config.md#企业微信适配器)。
+Token 和 EncodingAESKey 点击随机获取，并记录下来，填写到[企业微信适配器](/deploy/quick-config/config.md#企业微信适配器)。
 
 ## 保存回调地址
 当前面五个配置项已经正确获取，并且准确的填入到企业微信适配器中，那么**启动 LangBot**。

@@ -75,7 +75,7 @@ export default defineConfig({
                 text: "QQ 官方机器人",
                 link: "/deploy/platforms/qq/official",
               },
-              { text: "企业微信", link: "/deploy/platforms/wecom/wecom" },
+              { text: "企业微信", link: "/deploy/platforms/wechat/wecom" },
             ],
           },
           { text: "填写配置信息", link: "/deploy/quick-config/config" },

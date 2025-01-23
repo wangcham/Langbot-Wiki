@@ -9,7 +9,7 @@
 ## platform.json
 
 修改此配置文件以指定需要连接的消息平台，只需要关注`platform-adapters`字段。
-目前支持 `go-cqhttp`、`aiocqhttp`、`qq-botpy` 消息平台适配器，也可以同时启用多个同种类或不同种类的平台适配器。  
+目前支持 `go-cqhttp`（QQ逆向）、`aiocqhttp`（QQ逆向）、`qq-botpy`（QQ官方）、`wecom`（企业微信官方） 消息平台适配器，也可以同时启用多个同种类或不同种类的平台适配器。  
 请根据你部署的消息平台的情况选择填写。
 
 ::: info
@@ -101,7 +101,7 @@
 
 ### 企业微信适配器
 
-用于接入企业微信,如果不清楚这些内容应该填写什么，请查看[配置企业微信](/deploy/platforms/wecom/wecom.md)。
+用于接入企业微信机器人,如果不清楚这些内容应该填写什么，请查看[配置企业微信](/deploy/platforms/wechat/wecom.md)。
 
 ```json
 {
