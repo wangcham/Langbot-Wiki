@@ -76,6 +76,7 @@ export default defineConfig({
                 link: "/deploy/platforms/qq/official",
               },
               { text: "企业微信", link: "/deploy/platforms/wechat/wecom" },
+              { text: "飞书", link: "/deploy/platforms/lark" },
             ],
           },
           { text: "填写配置信息", link: "/deploy/quick-config/config" },
