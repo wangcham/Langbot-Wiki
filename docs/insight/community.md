@@ -1,10 +1,10 @@
 # 社区资源
 
 
-## 视频教程
+## 简化版教程
+> 简化版教程：如视频教程、更简单的文字教程，适合小白
 
-收录于：https://thelazy.cn/2024/12/29/LangBot/
-
+收录于：https://blog.thelazy.top/tags/langbot
 
 ## 本项目交流 QQ 群
 
