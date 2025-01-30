@@ -10,4 +10,5 @@
 
 > 遇到问题请先认真阅读文档，如无法解决再加群提问
 
-LangBot 社区交流群：619154800 ([链接](https://qm.qq.com/q/1K9GjQuza))
+LangBot 社区（二）：1030838208 ([链接](https://qm.qq.com/q/PF9OuQCCcM))  
+【已满】LangBot 社区（一）：619154800 ([链接](https://qm.qq.com/q/1K9GjQuza))  
