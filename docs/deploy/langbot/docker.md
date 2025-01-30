@@ -1,4 +1,4 @@
-# Docker部署(仅推荐在Linux上使用)
+# Docker部署
 
 :::warning 
 请**确保**您具有以下能力：  
