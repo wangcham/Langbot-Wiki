@@ -63,6 +63,8 @@
 - `moonshot`：[Moonshot](https://moonshot.cn/)（月之暗面 kimi）的密钥组
 - `deepseek`：[Deepseek](https://deepseek.com/)（深度求索）的密钥组
 - `gitee-ai`: [Gitee AI](https://ai.gitee.com/) Serverless API 的密钥组
+- `siliconflow`: [SiliconFlow](https://siliconflow.cn/) 的密钥组
+
 
 ## 大模型请求器 requester
 
@@ -110,6 +112,7 @@
             "args": {},
             "timeout": 120
         }
+        ...
     },
 ```
 
@@ -125,6 +128,8 @@
 - `gitee-ai-chat-completions`：[Gitee AI](https://ai.gitee.com/) Serverless API 请求器（OpenAI 兼容接口）
 - `xai-chat-completions`：[xAI](https://x.ai/) 请求器
 - `zhipuai-chat-completions`：[智谱 AI](https://open.bigmodel.cn/) 请求器
+- `lmstudio-chat-completions`：[LMStudio](https://lmstudio.ai/) 请求器
+- `siliconflow-chat-completions`：[SiliconFlow](https://siliconflow.cn/) 请求器
 
 
 `base-url`：设置接口地址。
