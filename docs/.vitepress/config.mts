@@ -46,7 +46,7 @@ export default defineConfig({
                 link: "/deploy/platforms/readme",
               },
               {
-                text: "QQ 个人号（逆向协议）",
+                text: "QQ 个人号",
                 collapsed: true,
                 items: [
                   {
@@ -77,6 +77,7 @@ export default defineConfig({
               },
               { text: "企业微信", link: "/deploy/platforms/wechat/wecom" },
               { text: "飞书", link: "/deploy/platforms/lark" },
+              { text: "Discord", link: "/deploy/platforms/discord" },
             ],
           },
           { text: "填写配置信息", link: "/deploy/quick-config/config" },
