@@ -9,3 +9,4 @@ LangBot 需要连接消息平台 API 才能与用户交互，目前支持以下�
 | QQ 官方机器人 | ✅ | 接入 QQ 开放平台的机器人 API | [教程](/deploy/platforms/qq/official) |
 | 企业微信 | ✅ | 企业内部机器人 | [教程](/deploy/platforms/wechat/wecom) |
 | 飞书 | ✅ |  | [教程](/deploy/platforms/lark) |
+| Discord | ✅ |  | [教程](/deploy/platforms/discord) |
