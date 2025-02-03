@@ -2,6 +2,10 @@
 
 使用[宝塔面板](https://www.bt.cn/new/download.html?r=dk_LangBot)一键部署 LangBot。
 
+:::info
+使用[阿里云，服务器价格低至 38 元一年，更可以享受8折优惠](https://www.aliyun.com/minisite/goods?userCode=ys4ad8gs)，一键安装宝塔更方便
+:::
+
 ## 安装宝塔
 
 :::warning
