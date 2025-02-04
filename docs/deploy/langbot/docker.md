@@ -9,13 +9,8 @@
 ::: 
 
 :::info
-请先确保 Git、 Docker 和 Docker Compose 已安装
-:::
-
-
-
-:::info
-使用[阿里云，服务器价格低至 38 元一年，更可以享受8折优惠](https://www.aliyun.com/minisite/goods?userCode=ys4ad8gs)
+- 请先确保 Git、 Docker 和 Docker Compose 已安装
+- 推荐使用[阿里云，服务器价格低至 38 元一年，更可以享受8折优惠](https://www.aliyun.com/minisite/goods?userCode=ys4ad8gs)
 :::
 
 Git 克隆本项目：

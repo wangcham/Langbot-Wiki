@@ -101,7 +101,7 @@
 
 ### 企业微信适配器
 
-用于接入企业微信机器人,如果不清楚这些内容应该填写什么，请查看[配置企业微信](/deploy/platforms/wechat/wecom.md)。
+用于接入企业微信机器人,如果不清楚这些内容应该填写什么，请查看[配置企业微信](/deploy/platforms/wecom/wecom.md)。
 
 ```json
 {
@@ -125,6 +125,49 @@
 `port`：运行 企业微信回调地址 的监听端口，一般不改动
 
 `corpid`,`secret`,`token`,`EncodingAESKey`,`contacts_secret`都在企业微信配置项页中获取。
+
+## 个人微信
+
+具体用法请查看[配置个人微信](/deploy/platforms/wechat/gewechat.md)。
+
+```json
+{
+    "adapter": "gewechat",
+    "enable": true,
+    "gewechat_url": "http://gewe:2531",
+    "port": 2286,
+    "callback_url": "http://langbot:2286/gewechat/callback",
+    "app_id": "",
+    "token": ""
+}
+```
+
+## 飞书
+
+具体用法请查看[配置飞书](/deploy/platforms/lark.md)。
+
+```json
+{
+    "adapter": "lark",
+    "enable": false,
+    "app_id": "cli_abcdefgh",
+    "app_secret": "XXXXXXXXXX",
+    "bot_name": "LangBot"
+},
+```
+
+## Discord
+
+具体用法请查看[配置 Discord](/deploy/platforms/discord.md)。
+
+```json
+{
+    "adapter": "discord",
+    "enable": false,
+    "client_id": "1234567890",
+    "token": "XXXXXXXXXX"
+},
+```
 
 ## provider.json
 
