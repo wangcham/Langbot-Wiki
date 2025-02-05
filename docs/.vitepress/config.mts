@@ -73,7 +73,18 @@ export default defineConfig({
               },
               {
                 text: "QQ 官方机器人",
-                link: "/deploy/platforms/qq/official",
+                // link: "/deploy/platforms/qq/official",
+                collapsed: true,
+                items: [
+                  {
+                    text: "WebSocket 方式",
+                    link: "/deploy/platforms/qq/official",
+                  },
+                  {
+                    text: "Webhook 方式",
+                    link: "/deploy/platforms/qq/official_webhook",
+                  },
+                ],
               },
               { text: "企业微信", link: "/deploy/platforms/wecom/wecom" },
               { text: "个人微信", 
