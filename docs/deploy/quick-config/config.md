@@ -40,7 +40,7 @@
 
 `access-token`：设置访问密钥，与 NapCat/Lagrange/LLOneBot 等框架中设置的保持一致
 
-### qq-botpy 适配器
+### qq-botpy 适配器（使用websocket方式）
 
 用于接入 QQ 官方机器人 API。
 
@@ -71,6 +71,33 @@
 - `public_guild_messages` QQ 频道消息
 - `direct_message` QQ 频道私聊消息
 - `public_messages` Q群 和 列表私聊消息
+
+### qqofficial 适配器（使用webhook方式）
+
+用于接入QQ官方机器人（webhook接入）。
+
+```json
+{
+    "adapter": "qqofficial",
+    "enable": false,
+    "appid": "",
+    "secret": "",
+    "port": 2284,
+    "token": ""
+},
+```
+
+`"adapter": "qqofficial"`，无需改动。
+
+`enable`：是否启用，配置完成后请将其设为`true`
+
+`appid`：申请到的QQ官方机器人的appid
+
+`secret`：申请到的QQ官方机器人的secret
+
+`token`: 申请到的QQ官方机器人的token
+
+`port`: 启动端口，一般不改动。
 
 ### Nakuru 适配器
 
