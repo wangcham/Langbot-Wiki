@@ -10,5 +10,15 @@
 
 > 遇到问题请先认真阅读文档，如无法解决再加群提问
 
-LangBot 社区（二）：1030838208 ([链接](https://qm.qq.com/q/PF9OuQCCcM))  
-【已满】LangBot 社区（一）：619154800 ([链接](https://qm.qq.com/q/1K9GjQuza))  
+### 🥰 社区总群
+
+解答各种问题
+
+- LangBot 社区（二）：1030838208 ([链接](https://qm.qq.com/q/PF9OuQCCcM))  
+- 【已满】LangBot 社区（一）：619154800 ([链接](https://qm.qq.com/q/1K9GjQuza))  
+
+### 🧩 插件开发群
+
+插件开发、发布、交流
+
+- LangBot 插件开发：1032327138 ([链接](https://qm.qq.com/q/G7ENGTjeou))  

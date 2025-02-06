@@ -223,3 +223,9 @@ async def access_web(self, query, url: str):
 ### API 参考
 
 关于插件可以调用的 API，请查看 [API 参考](./api-ref)
+
+### 插件开发交流群
+
+插件开发、发布、交流
+
+- LangBot 插件开发：1032327138 ([链接](https://qm.qq.com/q/G7ENGTjeou))  
