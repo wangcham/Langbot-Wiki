@@ -77,12 +77,12 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "WebSocket 方式",
-                    link: "/deploy/platforms/qq/official",
-                  },
-                  {
                     text: "Webhook 方式",
                     link: "/deploy/platforms/qq/official_webhook",
+                  },
+                  {
+                    text: "WebSocket 方式",
+                    link: "/deploy/platforms/qq/official",
                   },
                 ],
               },

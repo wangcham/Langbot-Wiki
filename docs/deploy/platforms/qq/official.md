@@ -1,5 +1,9 @@
 # 使用 QQ 官方机器人 API（使用websocket方式）
 
+:::warning 
+QQ 官方已停止维护 WebSocket 方式，请使用 Webhook 方式。
+:::
+
 QQ官方机器人所有人均可申请，可以在频道和群聊中使用，私聊也可。
 
 ## 注册 QQ 机器人
