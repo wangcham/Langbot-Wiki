@@ -58,7 +58,7 @@ your_domain_name {
 例如，如果你有域名 testlb.com，并且解析地址为本机，那么填写为：
 ```json
 testlb.com {
-        reverve_proxy 127.0.0.1:2284
+        reverse_proxy 127.0.0.1:2284
 }
 ```
 
