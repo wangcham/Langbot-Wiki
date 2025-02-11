@@ -195,6 +195,10 @@ export default defineConfig({
             link: "/workshop/one-api",
           },
           {
+            text:"如何使用 Ollama 接入本地模型",
+            link:"/workshop/ollama"
+          },
+          {
             text: "如何实现一个消息平台适配器？",
             link: "/workshop/impl-platform-adapter",
           },
