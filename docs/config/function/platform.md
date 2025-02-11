@@ -8,6 +8,7 @@
 
 ## 消息平台适配器 platform-adapters
 
+以下只列举部分适配器配置。
 ```json
 "platform-adapters": [
     {
@@ -53,11 +54,11 @@
         "token": "",
         "EncodingAESKey": "",
         "contacts_secret": ""
-    }
+    },
 ],
 ```
 
-目前支持 `go-cqhttp`、`aiocqhttp`、`qq-botpy`、`qqofficial`、 `wecom`  等八种消息平台适配器，也可以同时启用多个同种类或不同种类的平台适配器。  
+目前支持 `go-cqhttp`、`aiocqhttp`、`qq-botpy`、`qqofficial`、 `wecom`  等多种消息平台适配器，也可以同时启用多个同种类或不同种类的平台适配器。  
 各个消息平台的配置方式请查看[部署文档](/deploy/quick-config/config.html#platform-json)。
 
 ### 多开示例

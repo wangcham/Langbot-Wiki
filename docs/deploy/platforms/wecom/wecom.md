@@ -36,6 +36,8 @@
 
 进入机器人页面。
 
+点击最下方的`企业可信IP`，将部署 LangBot 的服务器添加进去。
+
 点击` 接收消息 `，` 设置API接收 `，开始填写接收服务器消息配置。
 
 URL填写为` http://your_ip_address:2290/callback/command `，你的IP地址就是部署LangBot的服务器的地址。

@@ -132,15 +132,15 @@
 
 ```json
 {
-            "adapter": "wecom",
-            "enable": false,
-            "host": "0.0.0.0",
-            "port": 2290,
-            "corpid": "",
-            "secret": "",
-            "token": "",
-            "EncodingAESKey": "",
-            "contacts_secret": ""
+    "adapter": "wecom",
+    "enable": false,
+    "host": "0.0.0.0",
+    "port": 2290,
+    "corpid": "",
+    "secret": "",
+    "token": "",
+    "EncodingAESKey": "",
+    "contacts_secret": ""
 },
 ```
 `"adapter": "wecom"`，无需改动。
@@ -152,6 +152,33 @@
 `port`：运行 企业微信回调地址 的监听端口，一般不改动
 
 `corpid`,`secret`,`token`,`EncodingAESKey`,`contacts_secret`都在企业微信配置项页中获取。
+
+### 微信公众号适配器
+
+用于接入微信公众号机器人。
+
+```json
+{
+    "adapter":"officialaccount",
+    "enable": true,
+    "token": "",
+    "EncodingAESKey":"",
+    "AppSecret":"",
+    "AppID":"",
+    "host": "0.0.0.0",
+    "port": 2287
+}
+```
+
+`"adapter": "officialaccount"`，无需改动。
+
+`enable`：是否启用，配置完成后请将其设为`true`
+
+`host`：运行 微信公众号回调地址 的主机地址，一般不改动
+
+`port`：运行 微信公众号回调地址 的监听端口，一般不改动
+
+`AppSecret`,`token`,`EncodingAESKey`,`AppID`都在微信公众号配置项页中获取。
 
 ## 个人微信
 
