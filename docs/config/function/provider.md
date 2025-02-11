@@ -256,3 +256,50 @@
 
 使用 工作流 应用或 Agent 应用时，如果开启了`platform.json`中的`track-function-calls`，将会在 Dify 执行每个工具调用时，输出一个`调用函数xxx`的消息给用户。  
 但如果是使用`chat`应用下的`ChatFlow`（聊天助手->工作流编排），无论如何只会输出 Answer（直接回复）节点返回的文本。
+
+
+## 阿里云自建应用 Dashscope Service API 配置 dify-service-api
+
+```json
+    "dashscope-service-api": {
+        "agent": {
+            "api-key": "sk-1234567890",
+            "app-id": "Your_app_id",
+            "references_quote": "参考资料来自:"
+        },
+        "app-type": "agent",
+        "workflow": {
+            "api-key": "sk-1234567890",
+            "app-id": "Your_app_id",
+            "references_quote": "参考资料来自:",
+            "biz_params": {  
+            "city": "北京",
+            "date": "2023-08-10"
+        }
+        }
+    }
+```
+
+仅在 `runner` 设置为 `dashscope-service-api` 时，需要配置以下内容：
+
+- `app-type`：使用的 Dify 应用类型。 `agent` - 智能体应用（右-紫色）、 `workflow` - 智能体编排应用（左-橙色）
+
+![dashscope application](/assets/image/dashscope_application.png)
+
+- `agent`：Dify Agent 应用的配置
+    - `api-key`：阿里云百炼平台的 API 密钥
+    - `app-id`: "上图中的应用ID",
+    - `references_quote`：引用来源的提示语，默认为`参考资料来自:` 如果你在智能体应用中添加了展示回答来源这个配置将会起作用
+- `workflow`：Dify 工作流应用的配置
+    - `api-key`：阿里云百炼平台的 API 密钥
+    - `app-id`: "上图中的应用ID",
+    - `references_quote`：引用来源的提示语，默认为`参考资料来自:` 如果你在智能体应用中添加了展示回答来源这个配置将会起作用
+    - `biz_params`：业务参数，用于传入到智能体编排应用中，city和date对应下方第二章图中的`变量名`，二者的值是要传入的可在其中调用的参数
+
+`references_quote`解释图片
+
+![dashscope application](/assets/image/dashScope_ref_quote.png)
+
+`biz_params`解释图片
+
+![dashscope application](/assets/image/dashscope_bitz.png)
