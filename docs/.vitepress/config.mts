@@ -87,6 +87,7 @@ export default defineConfig({
                 ],
               },
               { text: "企业微信", link: "/deploy/platforms/wecom/wecom" },
+              { text:"微信公众号",link:"/deploy/platforms/wxoa.md"},
               { text: "个人微信", 
                 collapsed: true,
                 items: [
