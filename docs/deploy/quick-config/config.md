@@ -206,7 +206,10 @@
     "enable": false,
     "app_id": "cli_abcdefgh",
     "app_secret": "XXXXXXXXXX",
-    "bot_name": "LangBot"
+    "bot_name": "LangBot",
+    "enable-webhook": false,
+    "port": 2285,
+    "encrypt-key": "xxxxxxxxx"
 },
 ```
 
