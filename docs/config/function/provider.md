@@ -206,6 +206,7 @@
 
 - `local-agent`：LangBot 本地实现的一个 Agent 机制，实现会话管理、插件调用。需要设置为 local-agent 才能使用`内容函数`。
 - `dify-service-api`：使用 [Dify](https://dify.ai/) 的 Service API 机制，支持 聊天助手、Agent、工作流应用。
+- `dashscope-app-api`：使用 [阿里云百炼平台](https://bailian.console.aliyun.com/#/app-center) 自建应用的 API，支持 普通智能体应用、智能体编排应用。
 
 ## Dify Service API 配置 dify-service-api
 
@@ -229,7 +230,7 @@
     }
 ```
 
-仅在 `runner` 设置为 `dify-service-api` 时，需要配置以下内容：
+**仅在 `runner` 设置为 `dify-service-api` 时使用，需要配置以下内容：**
 
 - `base-url`：Dify Service API 的地址，默认是 `https://api.dify.ai/v1`，这是 Dify 官方云服务的地址，如果你使用的是自部署的社区版，请设置为你的自部署地址。
 - `app-type`：使用的 Dify 应用类型。支持 `chat` - 聊天助手（含高级编排）、 `agent` - Agent、 `workflow` - 工作流；请填写下方对应的应用类型 API 参数
@@ -258,40 +259,38 @@
 但如果是使用`chat`应用下的`ChatFlow`（聊天助手->工作流编排），无论如何只会输出 Answer（直接回复）节点返回的文本。
 
 
-## 阿里云自建应用 Dashscope Service API 配置 dify-service-api
+## 阿里云百炼平台自建应用配置 dashscope-app-api
 
 ```json
-    "dashscope-service-api": {
+    "dashscope-app-api": {
+        "app-type": "agent",
+        "api-key": "sk-1234567890",
         "agent": {
-            "api-key": "sk-1234567890",
             "app-id": "Your_app_id",
             "references_quote": "参考资料来自:"
         },
-        "app-type": "agent",
         "workflow": {
-            "api-key": "sk-1234567890",
             "app-id": "Your_app_id",
             "references_quote": "参考资料来自:",
             "biz_params": {  
-            "city": "北京",
-            "date": "2023-08-10"
-        }
+                "city": "北京",
+                "date": "2023-08-10"
+            }
         }
     }
 ```
 
-仅在 `runner` 设置为 `dashscope-service-api` 时，需要配置以下内容：
+**仅在 `runner` 设置为 `dashscope-app-api` 时使用，需要配置以下内容：**
 
-- `app-type`：使用的 Dify 应用类型。 `agent` - 智能体应用（右-紫色）、 `workflow` - 智能体编排应用（左-橙色）
+- `app-type`：使用的百炼平台应用类型。 `agent` - 智能体应用（右-紫色）、 `workflow` - 智能体编排应用（左-橙色）
 
 ![dashscope application](/assets/image/dashscope_application.png)
 
-- `agent`：Dify Agent 应用的配置
-    - `api-key`：阿里云百炼平台的 API 密钥
+- `api-key`：阿里云百炼平台的 API 密钥
+- `agent`：智能体应用的配置
     - `app-id`: "上图中的应用ID",
     - `references_quote`：引用来源的提示语，默认为`参考资料来自:` 如果你在智能体应用中添加了展示回答来源这个配置将会起作用
-- `workflow`：Dify 工作流应用的配置
-    - `api-key`：阿里云百炼平台的 API 密钥
+- `workflow`：智能体编排应用的配置
     - `app-id`: "上图中的应用ID",
     - `references_quote`：引用来源的提示语，默认为`参考资料来自:` 如果你在智能体应用中添加了展示回答来源这个配置将会起作用
     - `biz_params`：业务参数，用于传入到智能体编排应用中，city和date对应下方第二章图中的`变量名`，二者的值是要传入的可在其中调用的参数
