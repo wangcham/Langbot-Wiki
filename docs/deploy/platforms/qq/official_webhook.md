@@ -54,7 +54,7 @@ your_domain_name {
         reverse_proxy 127.0.0.1:2284
 }
 ```
-例如，如果你有域名 testlb.com，并且解析地址为本机，那么填写为：
+例如，如果你有域名 testlb.com，并且解析地址为本机，同时开启**443**端口，那么填写为：
 ```json
 testlb.com {
         reverse_proxy 127.0.0.1:2284
@@ -79,7 +79,13 @@ sudo systemctl status caddy
 
 #### 后续配置
 
-若 Caddy 启动不成功，请自行阅读 [Caddy文档](https://caddy2.dengxiaolong.com/docs/quick-starts/caddyfile)，或者加入 LangBot 社区群请求帮助。
+若 Caddy 启动不成功，请自行阅读 [Caddy文档](https://caddy2.dengxiaolong.com/docs/quick-starts/caddyfile)，或者加入 LangBot 社区群请求帮助。<br>
+
+以下是一些可能出现的问题：
+
+- 没有开启443端口
+- 没有将域名解析到本机
+- 没有成功保存 Caddyfile
 
 ### 设置管理端回调地址
 
