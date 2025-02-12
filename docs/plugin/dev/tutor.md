@@ -107,7 +107,11 @@ class HelloPlugin(BasePlugin):
 ## ❗规范(重要)
 
 - 请每个插件独立一个目录以便管理，建议在Github上创建一个仓库储存单个插件，以便获取和更新
-- 插件名使用`大驼峰命名法`，如`Hello`、`ExamplePlugin`、`ChineseCommands`等
+- 命名规范（重要）：
+    - 插件作者：使用英文，大小写均可，如`RockChinQ`
+    - 插件名：使用`大驼峰命名法`，如`Hello`、`ExamplePlugin`、`ChineseCommands`等
+    - 插件仓库：请使用大驼峰命名法，建议直接与插件名相同，如`HelloPlugin`
+    - 插件简介：建议携带`LangBot 插件`字样
 - 一个目录内可以存放多个Python程序文件，以独立出插件的各个功能，便于开发者管理，但不建议在一个目录内注册多个插件
 - 插件需要的依赖库请在插件目录下的`requirements.txt`中指定，程序从储存库获取此插件时将自动安装依赖
 
