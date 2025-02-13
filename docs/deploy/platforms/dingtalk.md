@@ -1,7 +1,5 @@
 # 部署钉钉机器人
 
-部署钉钉机器人接入企业微信
-
 ## 创建机器人
 
 进入 [钉钉开发者后台](https://open-dev.dingtalk.com/?spm=ding_open_doc.document.0.0.74f445e5MkawbT#/)，登录并且进入组织。登陆成功后进入开放平台，是这样的：
