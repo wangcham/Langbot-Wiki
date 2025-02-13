@@ -11,4 +11,5 @@ LangBot 需要连接消息平台 API 才能与用户交互，目前支持以下�
 | 微信公众号 | ✅ | 微信公众平台机器人 | [教程](/deploy/platforms/wxoa.md) |
 | 个人微信 | ✅ | 个人微信机器人 | [Gewechat](/deploy/platforms/wechat/gewechat) |
 | 飞书 | ✅ |  | [教程](/deploy/platforms/lark) |
+| 钉钉 | ✅ |  | [教程](/deploy/platforms/dingtalk) |
 | Discord | ✅ |  | [教程](/deploy/platforms/discord) |
