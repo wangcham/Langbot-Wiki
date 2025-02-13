@@ -213,6 +213,21 @@
 },
 ```
 
+## 钉钉适配器
+
+具体用法请查看[配置钉钉机器人](/deploy/platforms/dingtalk.md)
+
+```json
+{
+    "adapter":"dingtalk",
+    "enable": false,
+    "client_id":"",
+    "client_secret":"",
+    "robot_code":"",
+    "robot_name":""
+},
+```
+
 ## Discord
 
 具体用法请查看[配置 Discord](/deploy/platforms/discord.md)。
