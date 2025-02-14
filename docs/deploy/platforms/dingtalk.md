@@ -1,13 +1,15 @@
 # 部署钉钉机器人
 
+部署 LangBot 到钉钉。
+
 ## 创建机器人
 
-进入 [钉钉开发者后台](https://open-dev.dingtalk.com/?spm=ding_open_doc.document.0.0.74f445e5MkawbT#/)，登录并且进入组织。登陆成功后进入开放平台，是这样的：
+进入 [钉钉开发者后台](https://open-dev.dingtalk.com/?spm=ding_open_doc.document.0.0.74f445e5MkawbT#/)，登录并且进入组织。登录成功后进入开放平台，是这样的：
 ![钉钉开放平台](/assets/image/ding1.png)
 
 点击上方的 `应用开发`,然后点击右面蓝色的按钮 `创建应用`，填写机器人的基本信息，点击保存。
 
-进入了机器人的后台，比如我们有机器人 langbot2 ,那么它的管理页面是这样的：
+进入机器人的后台，比如我们有机器人 langbot2 ,那么它的管理页面是这样的：
 ![机器人页面](/assets/image/ding2.png)
 
 ## 配置机器人
@@ -28,7 +30,7 @@
 点击`凭证与基础信息`，记录`Client ID` 和 `Client Secret`，
 点击`应用能力`，`机器人`，记录下 RobotCode 和 机器人名称。
 将以上配置项填写入[钉钉机器人配置项](/deploy/quick-config/config.md#钉钉适配器)。<br>
-启动 LangBot 。
+**启动 LangBot** 。
 
 ## 添加机器人
 
