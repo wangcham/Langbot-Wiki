@@ -23,9 +23,9 @@
 
 ![通讯录同步secret](/assets/image/wecom3.jpg)
 
-点击`查看secret`，记录下来，这是contacts_secret（通讯录同步 secret）。
+点击`查看secret`，记录下来，这是 contacts_secret（通讯录同步 secret）。
 
-3. 点击`应用管理`,找到刚才创建的机器人，查看机器人的 secret ,记录下来。
+3. 点击`应用管理`，找到刚才创建的机器人，查看机器人的 secret ,记录下来。
 
 ![机器人secret](/assets/image/wecom4.png)
 
