@@ -64,6 +64,8 @@
 - `deepseek`：[Deepseek](https://deepseek.com/)（深度求索）的密钥组
 - `gitee-ai`: [Gitee AI](https://ai.gitee.com/) Serverless API 的密钥组
 - `siliconflow`: [SiliconFlow](https://siliconflow.cn/) 的密钥组
+- `bailian`: 阿里云百炼模型接口密钥组
+- `volcark`: 火山方舟模型、应用接口密钥组
 
 
 ## 大模型请求器 requester
@@ -130,7 +132,8 @@
 - `zhipuai-chat-completions`：[智谱 AI](https://open.bigmodel.cn/) 请求器
 - `lmstudio-chat-completions`：[LMStudio](https://lmstudio.ai/) 请求器
 - `siliconflow-chat-completions`：[SiliconFlow](https://siliconflow.cn/) 请求器
-
+- `bailian-chat-completions`：[阿里云百炼](https://bailian.console.aliyun.com/) 请求器，仅支持模型，应用请使用下方百炼平台运行器
+- `volcark-chat-completions`：[火山方舟](https://console.volcengine.com/ark/region:ark+cn-beijing/model?vendor=Bytedance&view=LIST_VIEW) 请求器，默认为模型调用接口，应用(Bots)调用接口请在`base-url`后方添加`/bots`
 
 `base-url`：设置接口地址。
 
