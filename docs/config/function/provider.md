@@ -241,7 +241,7 @@
 - `base-url`：Dify Service API 的地址，默认是 `https://api.dify.ai/v1`，这是 Dify 官方云服务的地址，如果你使用的是自部署的社区版，请设置为你的自部署地址。
 - `app-type`：使用的 Dify 应用类型。支持 `chat` - 聊天助手（含高级编排）、 `agent` - Agent、 `workflow` - 工作流；请填写下方对应的应用类型 API 参数
 - `options`：特殊的选项配置。
-    - `convert-thinking-tips`：dify 使用 deepseek-r1 等有思维链的模型时会携带思考过程回复，此选项控制输出时的处理方式；值为 original 时，不转换思考提示；值为 plain 时，将思考提示转换为类似 DeepSeek 官方的\<think>...\</think>格式；值为 remove 时，删除思考提示
+    - `convert-thinking-tips`：dify 使用 deepseek-r1 等有思维链的模型时[会携带思考过程回复](https://github.com/RockChinQ/LangBot/issues/1108)，此选项控制输出时的处理方式；值为 original 时，不转换思考提示；值为 plain 时，将思考提示转换为类似 DeepSeek 官方的\<think>...\</think>格式；值为 remove 时，删除思考提示
 - `chat`：Dify 聊天助手应用的配置
     - `api-key`：Dify 聊天助手应用的 API 密钥
     - `timeout`：Dify 聊天助手应用的请求超时时间，以秒为单位，默认是 120 秒。
