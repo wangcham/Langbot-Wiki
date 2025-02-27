@@ -10,14 +10,14 @@
 [[toc]]
 :::
 
-## 💬简介
+## 💬 简介
 
 本页讲解普通插件开发步骤，插件内部有两种方法：事件监听器、内容函数。  
 事件监听器能在某些事件触发时进行响应，更改行为。内容函数可供大语言模型调用，具体请查看插件介绍页。
 
 LangBot 还支持组件扩展，可以不局限于监听预定事件，做到整个组件替换，具体请阅读完此页后查看**组件扩展**页。
 
-## 💻快速开始
+## 💻 快速开始
 
 按照文档部署此项目，并使其正常运行。  
 
@@ -104,7 +104,7 @@ class HelloPlugin(BasePlugin):
 
 编写完毕保存后，重新启动主程序，向机器人发送`!plugin`命令，若有`Hello`插件则说明插件加载成功
 
-## ❗规范(重要)
+## ❗ 规范(重要)
 
 - 请每个插件独立一个目录以便管理，建议在Github上创建一个仓库储存单个插件，以便获取和更新
 - 命名规范（重要）：
@@ -115,7 +115,7 @@ class HelloPlugin(BasePlugin):
 - 一个目录内可以存放多个Python程序文件，以独立出插件的各个功能，便于开发者管理，但不建议在一个目录内注册多个插件
 - 插件需要的依赖库请在插件目录下的`requirements.txt`中指定，程序从储存库获取此插件时将自动安装依赖
 
-## 🪝内容函数
+## 🪝 内容函数
 
 通过[GPT的Function Calling能力](https://platform.openai.com/docs/guides/gpt/function-calling)实现的`内容函数`，这是一种嵌入对话中，由GPT自动调用的函数。
 
@@ -201,7 +201,13 @@ async def access_web(self, query, url: str):
 
 - 这仅仅是一个示例，需要更高效的网络访问能力支持插件，请查看[WebwlkrPlugin](https://github.com/RockChinQ/WebwlkrPlugin)
 
-## 📄名词解释
+## 📦 上架插件市场
+
+当你的插件开发完成后，请上传到 GitHub，并在 [LangBot 仓库提出 issue](https://github.com/RockChinQ/LangBot/issues/new?assignees=&labels=%E7%8B%AC%E7%AB%8B%E6%8F%92%E4%BB%B6&projects=&template=submit-plugin.yml&title=%5BPlugin%5D%3A+%E8%AF%B7%E6%B1%82%E7%99%BB%E8%AE%B0%E6%96%B0%E6%8F%92%E4%BB%B6) ，待审核后将会添加到插件市场，约半个小时后会在 LangBot WebUI 插件页的插件市场上可见。
+
+![](/assets/image/plugin_dev_tutor_01.png)
+
+## 📄 名词解释
 
 ### 说明
 
