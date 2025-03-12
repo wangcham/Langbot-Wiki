@@ -255,11 +255,16 @@
 
 ![Dify 工作流应用的输出键](/assets/image/config_provider_01.png)
 
+### 请求变量
+
 当使用工作流时，LangBot 会显式传入以下参数，您可以自行在 Dify 工作流的开始节点中添加：
 
-- `langbot_user_message_text`：用户消息的纯文本
-- `langbot_session_id`：用户会话id，私聊为 `person_<id>`，群聊为 `group_<id>`
-- `langbot_conversation_id`：用户会话id，由 LangBot 生成。用户重置会话后，会重新生成
+- `user_message_text`：用户消息的纯文本
+- `session_id`：用户会话id，私聊为 `person_<id>`，群聊为 `group_<id>`
+- `conversation_id`：字符串，用户会话id，由 LangBot 生成。用户重置会话后，会重新生成
+- `msg_create_time`：数字类型，收到此消息的时间戳（秒）
+
+您可以[通过插件自定义任何变量](/plugin/dev/api-ref.html#%E8%AE%BE%E7%BD%AE%E8%AF%B7%E6%B1%82%E5%8F%98%E9%87%8F)。
 
 ![Dify 工作流开始节点配置](/assets/image/config_provider_02.png)
 
@@ -301,7 +306,8 @@
 - `workflow`：智能体编排应用的配置
     - `app-id`: "上图中的应用ID",
     - `references_quote`：引用来源的提示语，默认为`参考资料来自:` 如果你在智能体应用中添加了展示回答来源这个配置将会起作用
-    - `biz_params`：业务参数，用于传入到智能体编排应用中，city和date对应下方第二章图中的`变量名`，二者的值是要传入的可在其中调用的参数
+    - `biz_params`：业务参数，用于传入到智能体编排应用中，city和date对应下方第二章图中的`变量名`，二者的值是要传入的可在其中调用的参数。
+        - 与上述 Dify 相同，LangBot 也会传入`请求变量`到百炼应用。
 
 `references_quote`解释图片
 

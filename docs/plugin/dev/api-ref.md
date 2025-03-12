@@ -56,6 +56,46 @@ ctx.add_return(name: str, value: Any)
 
 添加返回值，事件返回值均为**可选**的，每个事件支持的返回值请查看`pkg.plugin.events`中的每个事件的注释。
 
+## 请求 API
+
+`请求（Query）`指的是用户向 LangBot 发送一个问题时，LangBot 处理该问题的程序上下文。此段落的 API 用于与这些上下文交互。  
+
+- 事件处理函数中，Query 对象一般位于`ctx.event.query`
+
+### 设置请求变量
+
+```python
+ctx.event.query.set_variable(key: str, value: typing.Any)
+```
+
+请求变量是与此次 Query 绑定的一个 `dict`，其中包含了一些程序上下文信息。如果使用的是 Dify 或者 阿里云百炼 等 LLMOps 的runner，[这些变量将被传入对应平台的 API 作为变量](/config/function/provider.html#%E8%AF%B7%E6%B1%82%E5%8F%98%E9%87%8F)。  
+如果您需要使用插件设置变量，建议在`PromptPreProcessing`事件时处理。
+
+- `key`：该变量的名称
+- `value`：该变量的值
+
+### 获取请求变量
+
+```python
+ctx.event.query.get_variable(key: str)
+```
+
+获取请求变量。
+
+- `key`：变量名称
+- 返回值：`typing.Any`
+
+### 获取所有请求变量
+
+```python
+ctx.event.query.get_variables()
+```
+
+获取此 Query 对象所有已设置的变量值。
+
+- 返回值：`dict[str, typing.Any]`
+
+
 ## LangBot API
 
 以下 API 是 LangBot 直接提供给插件调用的，可以在事件处理函数之外调用。
