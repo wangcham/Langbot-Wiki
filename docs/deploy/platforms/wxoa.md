@@ -42,7 +42,7 @@
 点击设置服务器配置，输入`Token`，`EncodingAESKey`，并将消息加解密方式改为`安全模式`。<br>
 至此，将获取到的四个配置项( AppID , AppSecret , token , EncodingAESKey )填入[微信公众号配置项](/deploy/quick-config/config.md#微信公众号适配器)。<br>
 
-在配置项中，`Mode`选项为选择的接入模式，其中默认为1，1为传统收发消息模式，2为发送任意文字获取回复模式。<br>
+在配置项中，`Mode`选项为选择的接入模式，其中默认为`drop`，`drop` 为传统收发消息模式，`passive` 为发送任意文字获取回复模式。<br>
 
 填写成功后，**启动 LangBot 。**<br>
 
