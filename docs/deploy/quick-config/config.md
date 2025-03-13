@@ -165,7 +165,7 @@
     "EncodingAESKey":"",
     "AppSecret":"",
     "AppID":"",
-    "Mode":1,
+    "Mode":"drop",
     "host": "0.0.0.0",
     "port": 2287
 }
