@@ -2,11 +2,6 @@
 
 部署企业微信机器人接入 LangBot 。
 
-:::info
-- 此配置项是为了实现 LangBot 的群发消息，具体代码位于libs/wecom_api/api.py 。
-- 目前 LangBot 仍在开发，所以未实现此配置项的相关功能。
-- 此配置项可以填写入随机字符，**不能为空**。
-:::
 
 ## 创建机器人
 
@@ -22,6 +17,12 @@
 ![企业ID](/assets/image/wecom2.png)
 
 2. 开启通讯录同步权限
+
+:::info
+- 此配置项是为了实现 LangBot 的群发消息，具体代码位于libs/wecom_api/api.py 。
+- 目前 LangBot 仍在开发，所以未实现此配置项的相关功能。
+- 此配置项可以填写入随机字符，**不能为空**。
+:::
 
 ![通讯录权限](/assets/image/wecom5.png)
 
