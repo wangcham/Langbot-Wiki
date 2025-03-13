@@ -165,6 +165,7 @@
     "EncodingAESKey":"",
     "AppSecret":"",
     "AppID":"",
+    "Mode":"drop",
     "host": "0.0.0.0",
     "port": 2287
 }
@@ -173,6 +174,8 @@
 `"adapter": "officialaccount"`，无需改动。
 
 `enable`：是否启用，配置完成后请将其设为`true`
+
+`Mode`：具体参照微信公众号部署页面
 
 `host`：运行 微信公众号回调地址 的主机地址，一般不改动
 
