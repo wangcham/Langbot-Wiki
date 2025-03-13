@@ -21,7 +21,7 @@
 
 ![企业ID](/assets/image/wecom2.png)
 
-2. 开启通讯录同步权限 （目前 LangBot 仍在开发中，暂时没有用到此配置项，所以可以先填写入随机内容，不能不填。）
+2. 开启通讯录同步权限
 
 ![通讯录权限](/assets/image/wecom5.png)
 
