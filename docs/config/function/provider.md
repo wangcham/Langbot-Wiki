@@ -207,9 +207,13 @@
 设置聊天消息将由哪个运行器处理，默认是 `local-agent` 
 目前支持：
 
-- `local-agent`：LangBot 本地实现的一个 Agent 机制，实现会话管理、插件调用。需要设置为 local-agent 才能使用`内容函数`。
+- `local-agent`：LangBot 本地实现的一个 Agent 机制，实现会话管理、插件调用。
 - `dify-service-api`：使用 [Dify](https://dify.ai/) 的 Service API 机制，支持 聊天助手、Agent、工作流应用。
 - `dashscope-app-api`：使用 [阿里云百炼平台](https://bailian.console.aliyun.com/#/app-center) 自建应用的 API，支持 普通智能体应用、智能体编排应用。
+
+::: info
+仅在设置为`local-agent`时，才会使用 LangBot 内部配置的`模型`、`工具（内容函数）`、`提示词（情景预设）`、`本地存储的上下文`。
+:::
 
 ## Dify Service API 配置 dify-service-api
 
