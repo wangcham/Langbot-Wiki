@@ -166,6 +166,7 @@
     "AppSecret":"",
     "AppID":"",
     "Mode":"drop",
+    "LoadingMessage":"AI正在思考中，请发送任意内容获取回复。",
     "host": "0.0.0.0",
     "port": 2287
 }
@@ -176,6 +177,8 @@
 `enable`：是否启用，配置完成后请将其设为`true`
 
 `Mode`：具体参照微信公众号部署页面
+
+`LoadingMessage`: 加载信息，可更改为其他内容，仅在模式为 `passive` 下有效
 
 `host`：运行 微信公众号回调地址 的主机地址，一般不改动
 
