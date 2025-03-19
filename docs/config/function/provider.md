@@ -320,3 +320,59 @@
 `biz_params`解释图片
 
 ![dashscope application](/assets/image/dashscope_bitz.png)
+
+## [MCP](https://modelcontextprotocol.io/) 配置 mcp
+
+MCP (Model Context Protocol) 是 Anthropic 设计的 Agent 上下文标准协议，现已被广泛采用。  
+LangBot 支持通过 MCP 协议获取丰富工具，以供在 `local-agent` 中使用。
+
+```json
+    "mcp": {
+        "servers": [
+            {
+                "name": "weather",
+                "enable": true,
+                "mode": "sse",
+                "url": "http://localhost:8000/sse",
+                "headers": {},
+                "timeout": 10
+            },
+            {
+                "name": "stock",
+                "enable": true,
+                "mode": "stdio",
+                "command": "python3",
+                "args": [
+                    "path/to/your/serverfile"
+                ],
+                "env": {}
+            }
+        ]
+    }
+```
+
+请先自行[阅读 MCP 的介绍](https://modelcontextprotocol.io/introduction)，了解如何使用第三方 MCP Server。LangBot 目前仅支持 Stdio(Python) 和 SSE 两种通信方式。
+
+- `SSE` 模式：
+    - `name` 服务器名称，自行定义
+    - `enable` 是否启用本 Server
+    - `mode` 固定填写`SSE`
+    - `url` MCP SSE Server 的访问 URL
+    - `headers` 连接时的 headers，可选
+    - `timeout` 连接超时时间
+- `stdio` 模式：
+    - `name` 服务器名称，自行定义
+    - `enable` 是否启用本 Server
+    - `mode` 固定填写`stdio`
+    - `command` 执行命令
+    - `args` 执行命令的参数
+    - `env` 执行命令的环境变量，可选
+
+::: info
+
+- 推荐使用 SSE 模式。
+- 使用 Stdio 时，仅支持执行 Python 脚本 Server。若 LangBot 运行在容器中，可以将 MCP Server 执行文件置于 `data` 目录下的新目录中，并使用 `command` 和 `args` 指定执行文件路径。
+
+:::
+
+
