@@ -60,7 +60,7 @@ pip install -r requirements.txt
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
 ```
 
-3. 运行一次主程序，生成配置文件
+4. 运行一次主程序，生成配置文件
 
 ```bash
 python main.py
