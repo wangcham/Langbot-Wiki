@@ -9,7 +9,7 @@
 ## platform.json
 
 修改此配置文件以指定需要连接的消息平台，只需要关注`platform-adapters`字段。
-目前支持 `go-cqhttp`（QQ逆向）、`aiocqhttp`（QQ逆向）、`qq-botpy`（QQ官方）、`wecom`（企业微信官方） 消息平台适配器，也可以同时启用多个同种类或不同种类的平台适配器。  
+目前支持 `go-cqhttp`（QQ逆向）、`aiocqhttp`（QQ逆向）、`qq-botpy`（QQ官方）、`wecom`（企业微信官方） 等多种消息平台适配器，也可以同时启用多个同种类或不同种类的平台适配器。  
 请根据你部署的消息平台的情况选择填写。
 
 ::: info
@@ -165,6 +165,8 @@
     "EncodingAESKey":"",
     "AppSecret":"",
     "AppID":"",
+    "Mode":"drop",
+    "LoadingMessage":"AI正在思考中，请发送任意内容获取回复。",
     "host": "0.0.0.0",
     "port": 2287
 }
@@ -173,6 +175,10 @@
 `"adapter": "officialaccount"`，无需改动。
 
 `enable`：是否启用，配置完成后请将其设为`true`
+
+`Mode`：具体参照微信公众号部署页面
+
+`LoadingMessage`: 加载信息，可更改为其他内容，仅在模式为 `passive` 下有效
 
 `host`：运行 微信公众号回调地址 的主机地址，一般不改动
 
@@ -210,6 +216,21 @@
     "enable-webhook": false,
     "port": 2285,
     "encrypt-key": "xxxxxxxxx"
+},
+```
+
+## 钉钉适配器
+
+具体用法请查看[配置钉钉机器人](/deploy/platforms/dingtalk.md)
+
+```json
+{
+    "adapter":"dingtalk",
+    "enable": false,
+    "client_id":"",
+    "client_secret":"",
+    "robot_code":"",
+    "robot_name":""
 },
 ```
 

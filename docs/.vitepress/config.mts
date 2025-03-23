@@ -62,10 +62,6 @@ export default defineConfig({
                     link: "/deploy/platforms/qq/aiocqhttp/llonebot",
                   },
                   {
-                    text: "shamrock",
-                    link: "/deploy/platforms/qq/aiocqhttp/shamrock",
-                  },
-                  {
                     text: "go-cqhttp",
                     link: "/deploy/platforms/qq/gocq",
                   },
@@ -86,8 +82,6 @@ export default defineConfig({
                   },
                 ],
               },
-              { text: "企业微信", link: "/deploy/platforms/wecom/wecom" },
-              { text:"微信公众号",link:"/deploy/platforms/wxoa.md"},
               { text: "个人微信", 
                 collapsed: true,
                 items: [
@@ -97,8 +91,12 @@ export default defineConfig({
                   },
                 ],
               },
+              { text: "企业微信", link: "/deploy/platforms/wecom/wecom" },
+              { text:"微信公众号",link:"/deploy/platforms/wxoa.md"},
               { text: "飞书", link: "/deploy/platforms/lark" },
+              { text:"钉钉",link:"/deploy/platforms/dingtalk.md"},
               { text: "Discord", link: "/deploy/platforms/discord" },
+              { text: "Telegram", link: "/deploy/platforms/telegram" },
             ],
           },
           { text: "填写配置信息", link: "/deploy/quick-config/config" },

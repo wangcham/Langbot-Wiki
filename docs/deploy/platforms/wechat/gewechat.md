@@ -1,5 +1,9 @@
 # 通过 Gewechat 接入个人微信
 
+:::warning 
+LangBot接入gewechat，仅供娱乐，请勿用于违法违规行为，否则后果自负。
+:::
+
 **本教程要求 LangBot 以 Docker 容器部署**，请根据 LangBot 部署文档将 LangBot 部署到 Docker 中。
 
 :::info
@@ -53,6 +57,7 @@ docker run -itd --network langbot-network -v /root/temp:/root/temp -p 2531:2531 
             "adapter": "gewechat",
             "enable": true,
             "gewechat_url": "http://gewe:2531",
+            "gewechat_file_url": "http://gewe:2532",
             "port": 2286,
             "callback_url": "http://langbot:2286/gewechat/callback",
             "app_id": "",
@@ -62,6 +67,7 @@ docker run -itd --network langbot-network -v /root/temp:/root/temp -p 2531:2531 
 
 - `enable` 是否启用个人微信适配器，请修改为 `true`
 - `gewechat_url` 上一步部署的 Gewechat 容器地址，端口默认为 2531，不需要填写路径
+- `gewechat_file_url` gewechat文件下载地址，端口默认为 2532，主机和 `gewechat_url` 相同，不需要填写路径
 - `port` LangBot 监听 Gewechat 消息的端口，默认 2286，非必要勿修改
 - `callback_url` 回调地址，是 Gewechat 容器推送消息给 LangBot 容器的地址，需要填写完整路径，例如 `http://langbot:2286/gewechat/callback`，端口与 `port` 一致，路径必须为 `/gewechat/callback`
 - `app_id` 和 `token` **请勿填写**，这是用于存储登录信息的，在首次启动扫码登录后会自动保存

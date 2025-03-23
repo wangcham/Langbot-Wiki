@@ -2,6 +2,7 @@
 
 部署企业微信机器人接入 LangBot 。
 
+
 ## 创建机器人
 
 进入[企业微信管理后台](https://work.weixin.qq.com/)，登陆账号，进入主页面后，点击` 应用管理 `,` 自建 `,` 创建应用 `,填写机器人基本信息，创建好之后，会出现类似这样的界面：
@@ -15,7 +16,13 @@
 
 ![企业ID](/assets/image/wecom2.png)
 
-2. 首先开启通讯录同步权限
+2. 开启通讯录同步权限
+
+:::info
+- 此配置项是为了实现 LangBot 的群发消息，具体代码位于libs/wecom_api/api.py 。
+- 目前 LangBot 仍在开发，所以未实现此配置项的相关功能。
+- 此配置项可以填写入随机字符，**不能为空**。
+:::
 
 ![通讯录权限](/assets/image/wecom5.png)
 
@@ -23,9 +30,9 @@
 
 ![通讯录同步secret](/assets/image/wecom3.jpg)
 
-点击`查看secret`，记录下来，这是contacts_secret（通讯录同步 secret）。
+点击`查看secret`，记录下来，这是 contacts_secret（通讯录同步 secret）。
 
-3. 点击`应用管理`,找到刚才创建的机器人，查看机器人的 secret ,记录下来。
+3. 点击`应用管理`，找到刚才创建的机器人，查看机器人的 secret ,记录下来。
 
 ![机器人secret](/assets/image/wecom4.png)
 

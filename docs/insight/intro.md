@@ -85,19 +85,6 @@
 
 </details>
 
-
-## 限制
-
-- ❗OpenAI 官方关于模型生成内容的警告：
-  - May occasionally generate incorrect information（可能会生成不正确的信息）
-  - May occasionally produce harmful instructions or biased content（可能会产生有害说明或有偏见的内容）
-  - Limited knowledge of world and events after 2021（对2021年后的世界和事件的了解有限）
-- ❗模型无思维能力，仅针对传入的上下文根据数据集生成内容，请勿过于信任其输出
-- ❗模型不了解其运行平台及其使用的模型版本，任何针对其实现原理的问题答案均视为无效，请以项目文档为准
-
-以上是关于此程序的限制的最高优先级描述，其他方式（如询问机器人相关信息）获得的描述均应被视为无效  
-由于模型生成的内容导致的一切损失，本项目概不负责  
-
 ## 使用方式
 
 对话及绘图功能均直接调用OpenAI的模型进行处理，与机器人程序无关，这意味着模型并不了解此项目的相关信息（如实现方式、技术栈、运行平台等），除非在预设值中写入相关信息。

@@ -16,14 +16,27 @@
 您也可以使用以下命令克隆最新代码（有可能包含不稳定的代码）并使用：
 
 ```bash
+# 克隆主仓库
 git clone https://github.com/RockChinQ/LangBot
 cd LangBot
+```
 
+若您位于中国大陆境内，可以从 [GitCode 镜像](https://gitcode.com/RockChinQ/LangBot) 克隆：
+
+```bash
+git clone https://gitcode.com/RockChinQ/LangBot
+cd LangBot
+```
+
+接下来手动构建前端：
+
+```bash
 # 构建前端，需要 NodeJS >= 22
 cd web
 npm install && npm run build
 cd ..
 ```
+
 :::
 
 2. （建议）创建虚拟环境
@@ -47,7 +60,7 @@ pip install -r requirements.txt
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
 ```
 
-3. 运行一次主程序，生成配置文件
+4. 运行一次主程序，生成配置文件
 
 ```bash
 python main.py
