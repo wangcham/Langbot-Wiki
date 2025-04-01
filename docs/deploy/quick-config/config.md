@@ -230,7 +230,8 @@
     "client_id":"",
     "client_secret":"",
     "robot_code":"",
-    "robot_name":""
+    "robot_name":"",
+    "markdown_card":false
 },
 ```
 

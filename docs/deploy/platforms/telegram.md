@@ -15,13 +15,14 @@
 ## 在 LangBot 中填写信息并启动
 
 根据[填写配置信息](/deploy/quick-config/config)中的 Telegram 适配器配置，填写相关信息。
-将上一步获取的 API Token 填写到配置中。
+将上一步获取的 API Token 填写到配置中，`markdown_card` 选项为是否启用 Markdown 形式的回复。 
 
 ```json
         {
             "adapter": "telegram",
             "enable": true,
-            "token": "xxxxxxx"
+            "token": "xxxxxxx",
+            "markdown_card":false
         },
 ```
 
