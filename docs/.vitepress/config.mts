@@ -97,6 +97,7 @@ export default defineConfig({
               { text:"钉钉",link:"/deploy/platforms/dingtalk.md"},
               { text: "Discord", link: "/deploy/platforms/discord" },
               { text: "Telegram", link: "/deploy/platforms/telegram" },
+              { text:"Slack", link: "/deploy/platforms/slack"},
             ],
           },
           { text: "填写配置信息", link: "/deploy/quick-config/config" },
