@@ -14,3 +14,4 @@ LangBot 需要连接消息平台 API 才能与用户交互，目前支持以下�
 | 钉钉 | ✅ |  | [教程](/deploy/platforms/dingtalk) |
 | Discord | ✅ |  | [教程](/deploy/platforms/discord) |
 | Telegram | ✅ |  | [教程](/deploy/platforms/telegram) |
+| Slack | ✅ |  | [教程](/deploy/platforms/slack) |

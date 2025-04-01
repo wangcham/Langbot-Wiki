@@ -247,6 +247,20 @@
 },
 ```
 
+### Slack
+
+具体用法请查看[配置Slack](/deploy/platforms/slack.md)。
+
+```json
+{
+    "adapter":"slack",
+    "enable":false,
+    "bot_token":"",
+    "signing_secret":"",
+    "port":2288
+}
+```
+
 ## provider.json
 
 修改此配置文件以设置所连接的 AI 提供商的相关信息。
