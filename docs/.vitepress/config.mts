@@ -201,6 +201,10 @@ export default defineConfig({
             text: "如何实现一个消息平台适配器？",
             link: "/workshop/impl-platform-adapter",
           },
+          {
+            text: "在 LangBot 接入完整 MCP 生态",
+            link: "/workshop/mcp-details"
+          }
         ],
       },
       {
