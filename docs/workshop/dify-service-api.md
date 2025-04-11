@@ -15,6 +15,13 @@ LangBot 目前支持`聊天助手`（含Chatflow）、`Agent`、`工作流`三�
 
 保存 API 服务器和 API 密钥，在 LangBot 的 `provider.json` 文件中配置。
 
+:::info
+以上为 Dify 云服务版本的示例，若您使用本地自部署的社区版本，请使用 LangBot 访问你自己 Dify 服务的地址作为 `base-url`，后方需要添加 `/v1` 作为路径。
+
+- 若 LangBot 与 Dify 部署在同一台主机，并且都是使用 Docker 部署的，可以参考文章：[网络配置详解](/deploy/network-details.html#langbot-%E5%92%8C%E6%B6%88%E6%81%AF%E5%B9%B3%E5%8F%B0%E5%9D%87%E8%BF%90%E8%A1%8C%E5%9C%A8-docker-%E5%AE%B9%E5%99%A8%E4%B8%AD)。其中，请将启动 Dify 的 docker-compose.yaml 中所有容器的`networks`均添加`langbot-network`，并为`nginx`容器添加容器名`dify-nginx`，最后在 LangBot 配置中将`base-url`设置为`http://dify-nginx/v1`。
+- 其他情况请咨询贵司运维人员。
+:::
+
 ## 配置 LangBot
 
 参考 [Dify Service API 配置](../config/function/provider#dify-service-api-%E9%85%8D%E7%BD%AE-dify-service-api) 文档，配置 LangBot 的 `provider.json` 文件。
