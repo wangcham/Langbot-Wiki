@@ -21,7 +21,7 @@ LangBot 还支持组件扩展，可以不局限于监听预定事件，做到整
 
 按照文档部署此项目，并使其正常运行。  
 
-使用[hello_plugin](https://github.com/RockChinQ/hello_plugin)作为模板生成插件代码仓库，然后将仓库代码克隆到`plugins`目录下。
+使用[HelloPlugin](https://github.com/langbot-app/HelloPlugin)作为模板生成插件代码仓库，然后将仓库代码克隆到`plugins`目录下。
 
 修改插件的 README.md 文件中需要修改的部分。
 

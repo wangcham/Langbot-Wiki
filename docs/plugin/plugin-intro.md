@@ -43,7 +43,7 @@ GPT将会回复一个对`access_the_web`的函数调用请求，LangBot将调用
 
 例如安装`hello_plugin`插件
 ```
-!plugin get https://github.com/RockChinQ/hello_plugin
+!plugin get https://github.com/langbot-app/HelloPlugin
 ```
 
 安装完成后重启程序。
