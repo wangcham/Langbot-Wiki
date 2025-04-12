@@ -35,7 +35,7 @@
 ```json
 {
     "adapter": "qqofficial",
-    "enable": false,
+    "enable": true,
     "appid": "",
     "secret": "",
     "port": 2284,
