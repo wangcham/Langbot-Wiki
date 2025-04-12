@@ -28,10 +28,20 @@
 
 记录其中的 `AppID` , `Token` , `AppSecret` ,并将 LangBot 所在服务器的IP地址填写到IP白名单中。
 
-
 ## 填写适配器
 
-将上文获取的 `AppID` , `Token` , `AppSecret` 填写入 [配置信息](/deploy/quick-config/config.md) 中的 qqofficial适配器（使用webhook方式）中。
+将上文获取的 `AppID` , `Token` , `AppSecret` 填写入 [配置信息](/deploy/quick-config/config.md) 中的 qqofficial适配器（使用webhook方式）中。<br>
+**配置项内容：**
+```json
+{
+    "adapter": "qqofficial",
+    "enable": true,
+    "appid": "",
+    "secret": "",
+    "port": 2284,
+    "token": ""
+},
+```
 
 
 ## 配置回调地址
