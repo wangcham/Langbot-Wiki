@@ -64,7 +64,15 @@ msg_chain = MessageChain([
 
 ## 消息平台事件
 
-这些事件不同于 LangBot 插件事件，是消息平台系统独立的一套事件系统。这些事件是 LangBot 插件事件的源事件，可以从每个 Query.message_event 取得。
+这些事件不同于 LangBot 插件事件，是消息平台系统独立的一套事件系统。这些事件是 LangBot 消息的源事件，可以从每个 Query.message_event 取得。
+
+```python
+    # 例如在插件中
+    @handler(GroupMessageReceived)
+    async def _(self, ctx: EventContext):
+        # 取得消息平台事件
+        message_event = ctx.query.message_event
+```
 
 消息平台事件定义位于`pkg/platform/types/events.py`中。
 
@@ -90,7 +98,7 @@ msg_chain = MessageChain([
 其中的`adapter`为每个适配器的实例化对象，对应 `pkg/platform/sources/` 下各个文件中的 `xxxAdapter(adapter.MessagePlatformAdapter)` 类。可以在插件事件的`query.adapter`中取得，例如：
 
 ```python
-
+    # 例如在插件中
     @handler(GroupMessageReceived)
     async def _(self, ctx: EventContext):
         # 取得适配器对象
